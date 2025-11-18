@@ -16,8 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+from safepath.views import safe_route
+from django.http import JsonResponse
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('web.urls'))
+    path('', include('web.urls')),
+    path('api/safe-route/', safe_route, name='safe_route'),
+    path('api/test-deepseek/', lambda r: JsonResponse({"result": test_deepseek()}))
 ]
