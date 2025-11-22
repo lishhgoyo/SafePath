@@ -68,11 +68,11 @@
 
 
     <div class="right-cont">
-        <div id="map">
+
+        <div id="map"></div>
         <div class="info-panel" id="info">
             <div><strong>SafePath</strong></div>
             <div class="control-row">
-                <!-- <button id="use-default" class="btn">Use default destination</button> -->
                 <button id="clear" class="btn">Clear</button>
             </div>
             <div><small>Click the map to choose a destination. Your location will be used as the start.</small></div>
@@ -80,13 +80,10 @@
             <div id="status">Waiting for location...</div>
             <ul id="stats" style="padding-left: 16px;"></ul>
         </div>
-        </div>
-
 
         <div class="bottom-cont">
             <h3>Throught Block ABC</h3>
             <div class="innerbottom">
-
                 <div class="crime-based">
                     <h4>Near-by reported crimes: </h4>
                     <h4>Safety Rating: </h4>
@@ -101,13 +98,15 @@
                         <li>Car: 5 min</li>
                     </ul>
                 </div>
-            </div>
 
+            </div>
         </div>
+
     </div>
 
 
 </div>
+
 {% endblock %}
 
 {% block extra_js %}
